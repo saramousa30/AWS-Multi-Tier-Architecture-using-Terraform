@@ -56,7 +56,7 @@ It is designed to serve real-world cloud workloads like web applications, intern
 - [Solution Overview](#solution-overview)  
 - [Architecture Diagram](#architecture-diagram)  
 - [Terraform Modules](#terraform-modules)  
-- [Component Breakdown](#project-structure)  
+- [Project Structure](#project-structure)  
 - [Customizing the Solution](#customizing-the-solution)  
 - [Prerequisites for Customization](#prerequisites-for-customization)  
   1. [Clone the Repository](#1-clone-the-repository)  
