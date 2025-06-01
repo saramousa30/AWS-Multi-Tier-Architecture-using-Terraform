@@ -56,7 +56,7 @@ It is designed to serve real-world cloud workloads like web applications, intern
 - [Solution Overview](#solution-overview)  
 - [Architecture Diagram](#architecture-diagram)  
 - [Terraform Modules](#terraform-modules)  
-- [Component Breakdown](#component-breakdown)  
+- [Component Breakdown](#project-structure)  
 - [Customizing the Solution](#customizing-the-solution)  
 - [Prerequisites for Customization](#prerequisites-for-customization)  
   1. [Clone the Repository](#1-clone-the-repository)  
@@ -84,10 +84,50 @@ It is designed to serve real-world cloud workloads like web applications, intern
 
 ---
 
-## 🧩 Component Breakdown
+## 🧩 Project Structure
 
-(You can copy-paste from the previously structured detailed components section in your original doc.)
-
+```
+├── Modules/
+│   ├── ALB/
+│   │   ├── main.tf
+│   │   ├── output.tf
+│   │   └── variables.tf
+│   ├── ASG/
+│   │   ├── config_file.sh.tpl
+│   │   ├── main.tf
+│   │   ├── output.tf
+│   │   └── variables.tf
+│   ├── CloudWatch/
+│   │   ├── main.tf
+│   │   └── variables.tf
+│   ├── DB/
+│   │   ├── main.tf
+│   │   ├── output.tf
+│   │   └── variables.tf
+│   ├── EC2/
+│   │   ├── main.tf
+│   │   ├── output.tf
+│   │   └── variables.tf
+│   ├── Security Group/
+│   │   ├── main.tf
+│   │   ├── output.tf
+│   │   └── variables.tf
+│   ├── SNS/
+│   │   ├── main.tf
+│   │   ├── output.tf
+│   │   └── variables.tf
+│   └── VPC/
+│       ├── main.tf
+│       ├── output.tf
+│       └── variables.tf
+├── backend.tf
+├── main.tf
+├── provider.tf
+├── variables.tf
+├──.gitignore
+├── AWS Multi-Tier Architecture.drawio.svg
+└── README.md
+```
 ---
 
 ## ⚙️ Customizing the Solution
